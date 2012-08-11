@@ -1,0 +1,216 @@
+body {
+  background-image: url('/img/background.png');
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 80px;
+  background-color: #22C2F8;
+  border-bottom: solid 2px #1690B9;
+  z-index: 10;
+  min-width: 853px;
+}
+
+.header {
+  padding: 25px 110px 2px 110px;
+}
+
+.header .nav {
+  display: block;
+  float: left;
+  margin: 20px 0 0 0;
+}
+
+.header .nav a {
+  color: #FFF;
+  text-transform: uppercase;
+  margin-right: 50px;
+  font-size: 1.4em;
+  letter-spacing: -1px;
+}
+
+.logo {
+  display: block;
+  float: right;
+  background-image: url('/img/logo.png');
+  height: 40px;
+  width: 184px;
+}
+
+.content-container {
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 82px 70px 0 70px;
+  background-color: #FFF;
+  padding: 0 40px 20px 40px;
+  color: #04445A;
+  min-width: 320px;
+}
+
+.home {
+  border-bottom: solid 2px #EEEEEE;
+  height: 237px;
+}
+
+.headline {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  width: 50%;
+  height: 237px;
+  z-index: 2;
+}
+
+.headline header {
+  padding: 30px 0;
+}
+
+.headline h1 {
+  font-size: 2em;
+}
+
+.headline p {
+  font-size: 1.5em;
+}
+
+.slides {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  max-width: 640px;
+  height: 237px;
+  background-image: url('/img/slides.png');
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.cutout {
+  height: 237px;
+  width: 237px;
+  background-image: url('/img/slide-cutout.png');
+}
+
+.button {
+  background-color: #04445A;
+  color: #FFF;
+  font-size: 1.5em;
+  padding: 5px 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  text-decoration: none;
+  background-color: #065F7D;
+}
+
+.section {
+  padding: 20px 0;
+  border-bottom: solid 2px #EEEEEE;
+}
+
+.section .anchor {
+  position: relative;
+  top: 82px;
+}
+
+.section h2 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.section p {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  width: 75%;
+}
+
+.footer-container {
+  background-color: #F4F4F4;
+  width: 100%;
+  border-top: solid 2px #DBDBDB;
+  min-width: 1031px;
+  z-index: 5;
+}
+
+.footer {
+  padding: 7px 70px 10px 112px;
+}
+
+.footer h3 {
+  float: left;
+  font-size: 1em;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.footer .social {
+  float: left;
+}
+
+.footer .sponsors {
+  float: right;
+  margin-left: 20px;
+}
+
+.footer .nav {
+  display: block;
+  float: left;
+  margin: 0 0 0 0;
+}
+
+.social a {
+  display: inline-block;
+  margin-left: 20px;
+  background-image: url('/img/social.png');
+  width: 37px;
+  height: 36px;
+  background-repeat: no-repeat;
+}
+
+.facebook {
+  background-position: 0 0;
+}
+
+.twitter {
+  background-position: -37px 0;
+}
+
+.email {
+  background-position: -74px 0;
+}
+
+.sponsors a {
+  display: inline-block;
+  margin-left: 45px;
+  height: 52px;
+  background-repeat: no-repeat;
+}
+
+.soundcloud-logo {
+  background-image: url('/img/soundcloud-logo.png');
+  width: 89px;
+  background-position: 0 0;
+}
+
+.nokia-logo {
+  background-image: url('/img/nokia-logo.png');
+  width: 129px;
+  background-position: 0 17px;
+}
+
+.betahaus-logo {
+  background-image: url('/img/betahaus-logo.png');
+  width: 132px;
+  background-position: 0 3px;
+}

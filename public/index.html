@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>GeekGirlMeetup</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+  <script src="libs/js/jquery.ez-pinned-footer.js" type="text/javascript" charset="utf-8"></script>
+  <script src="libs/js/jquery.scrollTo-min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="libs/js/jquery.localScroll.js" type="text/javascript" charset="utf-8"></script>
+  <script>
+    $(window).load(function() {
+      $(".footer-container").pinFooter();
+      $.localScroll({
+        offset:-82
+      });
+    });
+
+    $(window).resize(function() {
+      $(".footer-container").pinFooter();
+    });
+  </script>
+</head>
+<body>
+  <div class="header-container">
+    <div class="header">
+      <a href="#home" class="logo"></a>
+      <ul class="nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="http://geekgirlmeetup-berlin-2012.eventbrite.com/">Register</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+      </ul>
+      <div class="clear"></div>
+    </div>
+  </div>
+
+  <div class="content-container">
+    <div id="home" class="home">
+      <div class="headline">
+        <header>
+          <h1>Be part of Berlin's first GeekGirlMeetup</h1>
+          <p>on 15th of September 2012!</p>
+        </header>
+        <a class="button" href="http://geekgirlmeetup-berlin-2012.eventbrite.com/">Register</a>
+      </div>
+      <div class="slides">
+        <div class="cutout">
+        </div>
+      </div>
+    </div>
+
+    <div id="about" class="section">
+      <h2>About</h2>
+      <p>
+        GeekGirlMeetup is free un-conference on web, start-up and code.
+        It's a one day event, and the attendees are the programme.
+        Everyone can contribute and volunteer to get involved!
+      </p>
+    </div>
+
+    <div id="schedule" class="section">
+      <h2>Schedule</h2>
+      <p>
+        To be published on 1st of September.
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-container">
+    <div class="footer">
+      <div class="social">
+        <h3>Find us</h3>
+        <ul class="nav">
+          <li><a href="http://www.facebook.com/GeekGirlMeetupBerlin" class="facebook"></a></li>
+          <li><a href="https://twitter.com/ggmBerlin" class="twitter"></a></li>
+          <li><a class="email"></a></li>
+        </ul>
+      </div>
+      <div class="sponsors">
+        <h3>Sponsors</h3>
+        <ul class="nav">
+          <li><a href="http://soundcloud.com/" class="soundcloud-logo"></a></li>
+          <li><a href="http://www.nokia.com/" class="nokia-logo"></a></li>
+          <li><a href="http://betahaus.de/" class="betahaus-logo"></a></li>
+        </ul>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</body>
+</html>
