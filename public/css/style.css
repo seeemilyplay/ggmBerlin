@@ -303,10 +303,6 @@ body {
     background-image: none;
   }
 
-  .nav li {
-    display: block;
-  }
-
   .nav a {
     padding: 5px 0 5px 0;
     margin-left: 0;
@@ -323,6 +319,10 @@ body {
 
   .header .nav {
     float: none;
+  }
+
+  .header .nav li {
+    display: block;
   }
 
   .logo {
@@ -364,6 +364,10 @@ body {
   .footer .sponsors {
     float: none;
     margin-left: 0;
+  }
+
+  .footer .nav li {
+    display: block;
   }
 
   .footer .nav {
