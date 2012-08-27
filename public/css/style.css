@@ -123,7 +123,7 @@ body {
 .logo {
   display: block;
   float: right;
-  background-image: url('/img/logo.png');
+  background-image: url('/img/logos.png');
   height: 40px;
   width: 184px;
 }
@@ -284,19 +284,13 @@ body {
 }
 
 .soundcloud-logo {
-  background-image: url('/img/soundcloud-logo.png');
+  background-image: url('/img/logos.png');
   width: 89px;
-  background-position: 0 0;
-}
-
-.nokia-logo {
-  background-image: url('/img/nokia-logo.png');
-  width: 129px;
-  background-position: 0 17px;
+  background-position: -184px 0;
 }
 
 .betahaus-logo {
-  background-image: url('/img/betahaus-logo.png');
+  background-image: url('/img/logos.png');
   width: 132px;
-  background-position: 0 3px;
+  background-position: -274px 3px;
 }
