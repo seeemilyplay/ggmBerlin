@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GeekGirlMeetup</title>
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/style.css">
@@ -72,22 +73,30 @@
     </div>
   </div>
 
-  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script> -->
-  <script src="libs/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
   <script src="libs/js/jquery.ez-pinned-footer.js" type="text/javascript" charset="utf-8"></script>
   <script src="libs/js/jquery.scrollTo-min.js" type="text/javascript" charset="utf-8"></script>
   <script src="libs/js/jquery.localScroll.js" type="text/javascript" charset="utf-8"></script>
   <script>
-    $(window).load(function() {
-      $(".footer-container").pinFooter();
+    var isMobile = function() {
+      return navigator.userAgent.match(/Android|BlackBerry|iPhone|iPod|IEMobile/i) ? true : false;
+    };
+
+    if (!isMobile()) {
+      var pinFooter = function() {
+        $('.footer-container').pinFooter();
+      };
+      $(window).load(pinFooter);
+      $(window).resize(pinFooter);
+    }
+
+    var setupScrolling = function() {
       $.localScroll({
         offset:-82
       });
-    });
+    };
+    $(window).load(setupScrolling);
 
-    $(window).resize(function() {
-      $(".footer-container").pinFooter();
-    });
   </script>
 
 </body>

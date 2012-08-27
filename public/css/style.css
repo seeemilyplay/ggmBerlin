@@ -99,7 +99,7 @@ body {
   background-color: #22C2F8;
   border-bottom: solid 2px #1690B9;
   z-index: 10;
-  min-width: 853px;
+  min-width: 860px;
 }
 
 .header {
@@ -124,8 +124,9 @@ body {
   display: block;
   float: right;
   background-image: url('/img/logos.png');
+  background-position: -7px 0;
   height: 40px;
-  width: 184px;
+  width: 172px;
 }
 
 .content-container {
@@ -136,12 +137,12 @@ body {
   background-color: #FFF;
   padding: 0 40px 20px 40px;
   color: #04445A;
-  min-width: 320px;
+  min-width: 720px;
 }
 
 .home {
   border-bottom: solid 2px #EEEEEE;
-  height: 237px;
+  min-height: 237px;
 }
 
 .headline {
@@ -149,7 +150,7 @@ body {
   top: 0;
   left: 40px;
   width: 50%;
-  height: 237px;
+  min-height: 237px;
   z-index: 2;
 }
 
@@ -184,6 +185,7 @@ body {
 }
 
 .button {
+  display: inline-block;
   background-color: #04445A;
   color: #FFF;
   font-size: 1.5em;
@@ -225,7 +227,7 @@ body {
   background-color: #F4F4F4;
   width: 100%;
   border-top: solid 2px #DBDBDB;
-  min-width: 1031px;
+  min-width: 860px;
   z-index: 5;
 }
 
@@ -293,4 +295,78 @@ body {
   background-image: url('/img/logos.png');
   width: 132px;
   background-position: -274px 3px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width: 860px) {
+  body {
+    background-image: none;
+  }
+
+  .nav li {
+    display: block;
+  }
+
+  .nav a {
+    padding: 5px 0 5px 0;
+    margin-left: 0;
+  }
+
+  .header-container {
+    position: static;
+    min-width: 0;
+  }
+
+  .header {
+    padding: 25px 40px 2px 40px;
+  }
+
+  .header .nav {
+    float: none;
+  }
+
+  .logo {
+    float: none;
+  }
+
+  .content-container {
+    margin: 0;
+    padding-right: 10px;
+    min-width: 0;
+  }
+
+  .slides {
+    display: none;
+  }
+
+  .headline {
+    position: static;
+    width: 100%;
+  }
+
+  .footer-container {
+    min-width: 0;
+  }
+
+  .footer {
+    padding: 7px 40px 10px 40px;
+  }
+
+  .footer h3 {
+    float: none;
+    padding: 10px 0 5px 0;
+  }
+
+  .footer .social {
+    float: none;
+  }
+
+  .footer .sponsors {
+    float: none;
+    margin-left: 0;
+  }
+
+  .footer .nav {
+    float: none;
+  }
 }
