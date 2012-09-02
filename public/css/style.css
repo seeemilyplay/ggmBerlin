@@ -86,7 +86,7 @@ a:focus{
 
 body {
   background-image: url('/img/background.png');
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: 'Cabin Condensed', sans-serif;
   font-weight: 300;
 }
 
