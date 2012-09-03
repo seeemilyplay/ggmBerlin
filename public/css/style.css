@@ -320,7 +320,7 @@ body {
   }
 
   .header {
-    padding: 25px 40px 2px 40px;
+    padding: 25px 10px 2px 15px;
   }
 
   .header .nav {
@@ -337,6 +337,7 @@ body {
 
   .content-container {
     margin: 0;
+    padding-left: 15px;
     padding-right: 10px;
     min-width: 0;
   }
@@ -350,12 +351,16 @@ body {
     width: 100%;
   }
 
+  .headline h1 {
+    font-size: 1.9em;
+  }
+
   .footer-container {
     min-width: 0;
   }
 
   .footer {
-    padding: 7px 40px 10px 40px;
+    padding: 7px 10px 10px 15px;
   }
 
   .footer h3 {
