@@ -304,6 +304,76 @@ body {
   background-position: -274px 3px;
 }
 
+.time {
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.session {
+  padding: 10px;
+}
+
+.session div {
+  padding-top: 5px;
+}
+
+.session a {
+  padding-top: 5px;
+  display: block;
+}
+
+.gathering {
+  padding: 10px;
+}
+
+.gathering div {
+  padding-top: 5px;
+}
+
+.break {
+  padding: 10px;
+}
+
+.break div {
+  padding-top: 5px;
+}
+
+.speaker {
+  background-image: url('/img/icon_plus.png');
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+  padding-left: 30px;
+  min-height: 22px;
+  min-width: 24px;
+  cursor: hand;
+  cursor: pointer;
+}
+
+.bio {
+  font-size: 0.9em;
+  display: none;
+}
+
+.title {
+  padding-top: 5px;
+}
+
+.session .title {
+  background-image: url('/img/icon_plus.png');
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+  padding-left: 30px;
+  min-height: 22px;
+  min-width: 24px;
+  cursor: hand;
+  cursor: pointer;
+}
+
+.description {
+  font-size: 0.9em;
+  display: none;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-device-width: 860px) {
   body {
