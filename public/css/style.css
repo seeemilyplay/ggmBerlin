@@ -115,7 +115,7 @@ body {
 .header .nav a {
   color: #FFF;
   text-transform: uppercase;
-  margin-right: 50px;
+  margin-right: 30px;
   font-size: 1.4em;
   letter-spacing: -1px;
 }
@@ -224,6 +224,12 @@ body {
   font-weight: bold;
 }
 
+.section h3 {
+  text-transform: uppercase;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
 .section p {
   font-size: 1.5em;
   margin-bottom: 5px;
@@ -287,6 +293,30 @@ body {
 .schedule div.bio.expanded,
 .schedule div.description.expanded {
   display: block;
+}
+
+.person {
+  width: 306px;
+  float: left;
+  padding: 10px;
+}
+
+.portrait {
+  background-image: url('/img/portrait-surround.png');
+  min-width: 121px;
+  min-height: 121px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.person h3 {
+  padding-top: 10px;
+}
+
+.person p {
+  font-size: 1em;
+  width: 100%;
 }
 
 .footer-container {
@@ -424,6 +454,11 @@ body {
   .break {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .person {
+    float: none;
+    width: 100%;
   }
 
   .footer-container {
