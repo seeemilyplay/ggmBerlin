@@ -124,9 +124,9 @@ body {
   display: block;
   float: right;
   background-image: url('/img/logos.png');
-  background-position: -7px 5px;
-  height: 40px;
-  width: 172px;
+  height: 20px;
+  width: 137px;
+  margin-top: 19px;
 }
 
 .content-container {
@@ -288,20 +288,20 @@ body {
 .sponsors a {
   display: inline-block;
   margin-left: 45px;
-  height: 52px;
+  height: 50px;
   background-repeat: no-repeat;
 }
 
 .soundcloud-logo {
   background-image: url('/img/logos.png');
-  width: 89px;
-  background-position: -184px 0;
+  width: 78px;
+  background-position: -137px 0;
 }
 
 .betahaus-logo {
   background-image: url('/img/logos.png');
-  width: 132px;
-  background-position: -274px 3px;
+  width: 155px;
+  background-position: -215px 0;
 }
 
 .time {
