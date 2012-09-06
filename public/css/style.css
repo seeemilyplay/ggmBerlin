@@ -415,6 +415,17 @@ body {
     font-size: 1.9em;
   }
 
+  .schedule a {
+    padding-left: 0;
+  }
+
+  .session,
+  .gathering,
+  .break {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .footer-container {
     min-width: 0;
   }
