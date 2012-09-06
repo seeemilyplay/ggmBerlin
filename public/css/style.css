@@ -230,6 +230,65 @@ body {
   width: 75%;
 }
 
+.schedule .time,
+.schedule .room,
+.schedule .speaker,
+.schedule .title {
+  font-size: 1.3em;
+}
+
+.schedule a {
+  padding-left: 10px;
+}
+
+.time {
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.session,
+.gathering,
+.break {
+  padding: 10px;
+}
+
+.session div,
+.gathering div,
+.break div {
+  padding-top: 5px;
+}
+
+.speaker,
+.session .title {
+  background-image: url('/img/icon_plus.png');
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+  padding-left: 30px;
+  cursor: hand;
+  cursor: pointer;
+}
+
+.speaker.expanded,
+.session .title.expanded {
+  background-image: url('/img/icon_minus.png');
+}
+
+.schedule div.bio,
+.schedule div.description {
+  font-size: 1em;
+  padding: 15px 30px 0 30px;
+  display: none;
+}
+
+.schedule div.bio {
+  padding-bottom: 15px;
+}
+
+.schedule div.bio.expanded,
+.schedule div.description.expanded {
+  display: block;
+}
+
 .footer-container {
   background-color: #F4F4F4;
   width: 100%;
@@ -268,7 +327,7 @@ body {
   display: inline-block;
   margin-left: 20px;
   background-image: url('/img/social.png');
-  width: 37px;
+  width: 36px;
   height: 36px;
   background-repeat: no-repeat;
 }
@@ -278,11 +337,11 @@ body {
 }
 
 .twitter {
-  background-position: -37px 0;
+  background-position: -36px 0;
 }
 
 .email {
-  background-position: -74px 0;
+  background-position: -72px 0;
 }
 
 .sponsors a {
@@ -302,76 +361,6 @@ body {
   background-image: url('/img/logos.png');
   width: 155px;
   background-position: -215px 0;
-}
-
-.time {
-  padding-top: 20px;
-  font-weight: bold;
-}
-
-.session {
-  padding: 10px;
-}
-
-.session div {
-  padding-top: 5px;
-}
-
-.session a {
-  padding-top: 5px;
-  display: block;
-}
-
-.gathering {
-  padding: 10px;
-}
-
-.gathering div {
-  padding-top: 5px;
-}
-
-.break {
-  padding: 10px;
-}
-
-.break div {
-  padding-top: 5px;
-}
-
-.speaker {
-  background-image: url('/img/icon_plus.png');
-  background-repeat: no-repeat;
-  background-position: 0 2px;
-  padding-left: 30px;
-  min-height: 22px;
-  min-width: 24px;
-  cursor: hand;
-  cursor: pointer;
-}
-
-.bio {
-  font-size: 0.9em;
-  display: none;
-}
-
-.title {
-  padding-top: 5px;
-}
-
-.session .title {
-  background-image: url('/img/icon_plus.png');
-  background-repeat: no-repeat;
-  background-position: 0 2px;
-  padding-left: 30px;
-  min-height: 22px;
-  min-width: 24px;
-  cursor: hand;
-  cursor: pointer;
-}
-
-.description {
-  font-size: 0.9em;
-  display: none;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
