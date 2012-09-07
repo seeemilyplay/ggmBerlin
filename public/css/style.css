@@ -226,7 +226,7 @@ body {
 
 .section h3 {
   text-transform: uppercase;
-  font-size: 1em;
+  font-size: 1.3em;
   margin-bottom: 10px;
 }
 
@@ -241,6 +241,7 @@ body {
 .schedule .speaker,
 .schedule .title {
   font-size: 1.3em;
+  width: 75%;
 }
 
 .schedule a {
@@ -296,9 +297,10 @@ body {
 }
 
 .person {
-  width: 306px;
-  float: left;
-  padding: 10px;
+  display: inline-block;
+  width: 300px;
+  padding: 5px 20px;
+  vertical-align:top
 }
 
 .portrait {
@@ -312,11 +314,16 @@ body {
 
 .person h3 {
   padding-top: 10px;
+  text-align: center;
 }
 
 .person p {
+  text-align: center;
+  overflow-y: auto;
+  width: auto;
+  height: 150px;
   font-size: 1em;
-  width: 100%;
+  padding: 5px;
 }
 
 .footer-container {
@@ -457,8 +464,26 @@ body {
   }
 
   .person {
-    float: none;
-    width: 100%;
+    display: block;
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .portrait {
+    background-position: left;
+  }
+
+  .person h3 {
+   text-align: left;
+  }
+
+  .person p {
+    height: auto;
+    max-height: 1000px;
+    text-align: left;
+    padding-left: 0;
+    width: 75%;
   }
 
   .footer-container {
