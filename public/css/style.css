@@ -314,7 +314,7 @@ body {
 
 .person {
   display: inline-block;
-  width: 300px;
+  width: 240px;
   padding: 5px 20px;
   vertical-align:top
 }
@@ -337,7 +337,7 @@ body {
   text-align: center;
   overflow-y: auto;
   width: auto;
-  height: 150px;
+  height: 100px;
   font-size: 1em;
   padding: 5px;
 }
