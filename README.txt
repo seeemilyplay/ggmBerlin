@@ -10,4 +10,4 @@ $ foreman start
 
 To see open up your browser, and go to http://localhost:5000.
 
-You can see it deployed at http://immense-hollows-8953.herokuapp.com/
+It is deployed on Heroku at http://geekgirlmeetupberlin.herokuapp.com/.
