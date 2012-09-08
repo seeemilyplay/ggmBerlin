@@ -244,19 +244,32 @@ body {
   width: 75%;
 }
 
-.schedule a {
-  padding-left: 10px;
+.break .title {
+  text-transform: uppercase;
 }
 
 .time {
   padding-top: 20px;
+  padding-bottom: 1px;
   font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.room {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.schedule a {
+  padding-left: 10px;
+  color: #04445A;
 }
 
 .session,
 .gathering,
 .break {
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .session div,
@@ -269,10 +282,12 @@ body {
 .session .title {
   background-image: url('/img/icon_plus.png');
   background-repeat: no-repeat;
-  background-position: 0 2px;
+  background-position: 0 4px;
   padding-left: 30px;
   cursor: hand;
   cursor: pointer;
+  padding-bottom: 5px;
+  margin-top: 10px;
 }
 
 .speaker.expanded,
@@ -283,8 +298,9 @@ body {
 .schedule div.bio,
 .schedule div.description {
   font-size: 1em;
-  padding: 15px 30px 0 30px;
+  padding: 15px 0 0 30px;
   display: none;
+  width: 70%;
 }
 
 .schedule div.bio {
