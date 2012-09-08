@@ -280,7 +280,7 @@ body {
 
 .speaker,
 .session .title {
-  background-image: url('/img/icon_plus.png');
+  background-image: url('/img/plus-minus-icons.png');
   background-repeat: no-repeat;
   background-position: 0 4px;
   padding-left: 30px;
@@ -292,7 +292,7 @@ body {
 
 .speaker.expanded,
 .session .title.expanded {
-  background-image: url('/img/icon_minus.png');
+  background-position: 0 -24px;
 }
 
 .schedule div.bio,
