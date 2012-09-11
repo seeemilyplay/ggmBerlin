@@ -1,7 +1,4 @@
-var express = require('express'),
-    connect = require('connect'),
-    util = require('util'),
-    path = require('path'),
+var connect = require('connect'),
     http = require('http');
 
 var app = connect()
