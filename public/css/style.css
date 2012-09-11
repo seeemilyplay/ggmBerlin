@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
         display: block;
 }
 body {
-        line-height: 1;
+        line-height: 1.25;
 }
 ol, ul {
         list-style: none;
@@ -86,7 +86,7 @@ a:focus{
 
 body {
   background-image: url('/img/background.png');
-  font-family: 'Cabin Condensed', sans-serif;
+  font-family: 'Cabin Condensed', Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
 
@@ -115,9 +115,8 @@ body {
 .header .nav a {
   color: #FFF;
   text-transform: uppercase;
-  margin-right: 30px;
+  margin-right: 25px;
   font-size: 1.4em;
-  letter-spacing: -1px;
 }
 
 .logo {
@@ -160,6 +159,7 @@ body {
 
 .headline h1 {
   font-size: 2em;
+  line-height: 1.2;
 }
 
 .headline header p {
@@ -167,7 +167,7 @@ body {
 }
 
 .headline p.note {
-  padding: 20px 0;
+  padding: 10px 0;
   font-size: 1em;
   max-width: 70%;
 }
