@@ -1,10 +1,19 @@
-var connect = require('connect')
-  , http = require('http');
+var express = require('express'),
+    connect = require('connect'),
+    util = require('util'),
+    path = require('path'),
+    http = require('http');
 
 var app = connect()
   .use(connect.favicon('public/img/favicon.ico'))
   .use(connect.logger('dev'))
   .use(connect.static('public'))
+  .use(function(req, res, next) {
+    res.writeHead(302, {
+      'Location': 'http://geekgirlmeetupberlin.wordpress.com/' + req.url
+    });
+    res.end();
+  })
 
 var port = process.env.PORT || 8888;
 http.createServer(app).listen(port);
