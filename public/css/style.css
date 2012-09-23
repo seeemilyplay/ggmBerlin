@@ -172,7 +172,7 @@ body {
   max-width: 70%;
 }
 
-.slides {
+.headline .slides {
   position: absolute;
   top: 0;
   right: 0;
@@ -310,6 +310,14 @@ body {
 .schedule div.bio.expanded,
 .schedule div.description.expanded {
   display: block;
+}
+
+.session .links {
+  padding-left: 20px;
+}
+
+.session .links a {
+  display: inline-block;
 }
 
 .person {
@@ -455,7 +463,7 @@ body {
     min-width: 0;
   }
 
-  .slides {
+  .headline .slides {
     display: none;
   }
 
@@ -477,6 +485,10 @@ body {
   .break {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .session .links {
+    padding-left: 30px;
   }
 
   .person {
