@@ -481,7 +481,6 @@ body {
   .header-container {
     position: static;
     min-width: 0;
-    border: none;
   }
 
   .header {
@@ -498,8 +497,6 @@ body {
 
   .buttons {
     position: static;
-    background: #FFF;
-    width: 90%;
     padding: 10px;
   }
 
