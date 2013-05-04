@@ -472,7 +472,7 @@ body {
     background-image: none;
   }
 
-  .nav a {
+  .header .nav a {
     padding: 5px 0 5px 0;
     margin-left: 0;
     color: #FFF;
@@ -481,10 +481,11 @@ body {
   .header-container {
     position: static;
     min-width: 0;
+    border: none;
   }
 
   .header {
-    padding: 25px 10px 2px 15px;
+    padding: 25px 10px 10px 15px;
   }
 
   .header .nav {
@@ -499,6 +500,7 @@ body {
     position: static;
     background: #FFF;
     width: 100%;
+    padding: 10px;
   }
 
   .content-container {
@@ -506,6 +508,15 @@ body {
     padding-left: 15px;
     padding-right: 10px;
     min-width: 0;
+  }
+
+  #home {
+    min-height: 0;
+  }
+
+  #home .headline {
+    min-height: 0;
+    margin-bottom: 30px;
   }
 
   #home .slides {
