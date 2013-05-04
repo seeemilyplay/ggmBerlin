@@ -475,6 +475,7 @@ body {
   .nav a {
     padding: 5px 0 5px 0;
     margin-left: 0;
+    color: #FFF;
   }
 
   .header-container {
@@ -492,6 +493,10 @@ body {
 
   .header .nav li {
     display: block;
+  }
+
+  .buttons {
+    position: static;
   }
 
   .content-container {
