@@ -497,6 +497,8 @@ body {
 
   .buttons {
     position: static;
+    background: #FFF;
+    width: 100%;
   }
 
   .content-container {
