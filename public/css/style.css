@@ -95,37 +95,53 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #22C2F8;
-  border-bottom: solid 2px #1690B9;
+  background-color: #04445A;
+  border-bottom: solid 2px #04445A;
   z-index: 10;
   min-width: 860px;
   min-height: 65px;
 }
 
 .header {
-  padding: 20px 110px 3px 110px;
+  padding: 20px 70px 3px 70px;
 }
 
 .header .nav {
   display: block;
   float: left;
-  margin: 20px 0 0 0;
+  margin: 2px 0 0 0;
 }
 
 .header .nav a {
-  color: #FFF;
+  color: #A4B2B9;
   text-transform: uppercase;
   margin-right: 25px;
   font-size: 1.4em;
 }
 
-.logo {
-  display: block;
-  float: right;
-  background-image: url('/img/logos.png');
-  height: 20px;
-  width: 137px;
-  margin-top: 19px;
+.header .nav a:hover {
+  color: #FFF;
+}
+
+.buttons {
+  position: absolute;
+  top: 10px;
+  right: 90px;
+}
+
+.buttons a {
+  background-image: url('/img/button-logos.png');
+  height: 131px;
+  width: 132px;
+  display: inline-block;
+}
+
+.bg-button-logo {
+  background-position: 0 0;
+}
+
+.ggm-button-logo {
+  background-position: 132px 0;
 }
 
 .content-container {
@@ -140,8 +156,8 @@ body {
 }
 
 .home {
-  border-bottom: solid 2px #EEEEEE;
-  min-height: 237px;
+  border-bottom: solid 1px #C8C8C8;
+  min-height: 380px;
 }
 
 .headline {
@@ -172,21 +188,43 @@ body {
   max-width: 70%;
 }
 
+.headline .highlight {
+  color: #22C2F8;
+}
+
 #home .slides {
   position: absolute;
   top: 0;
   right: 0;
   width: 60%;
-  max-width: 640px;
-  height: 237px;
+  max-width: 629px;
+  height: 380px;
   background-image: url('/img/slides.png');
-  background-position: right;
+  background-position: 0 0;
   background-repeat: no-repeat;
+  transition: background-position 500ms ease;
+  -webkit-transition: background-position 1000ms ease;
+  -moz-transition: background-position 1000ms ease;
+  -o-transition: background-position 1000ms ease;
+}
+
+#home .slides.number-1 {
+  background-position: 0 0;
+}
+
+#home .slides.number-2 {
+  background-position: -736px 0;
+}
+
+#home .slides.number-3 {
+  background-position: right;
 }
 
 .cutout {
-  height: 237px;
-  width: 237px;
+  position: relative;
+  top: -1px;
+  height: 380px;
+  width: 227px;
   background-image: url('/img/slide-cutout.png');
 }
 
@@ -209,7 +247,7 @@ body {
 
 .section {
   padding: 20px 0;
-  border-bottom: solid 2px #EEEEEE;
+  border-bottom: solid 1px #C8C8C8;
 }
 
 .section .anchor {
@@ -219,9 +257,8 @@ body {
 
 .section h2 {
   text-transform: uppercase;
-  font-size: 1.5em;
-  margin-bottom: 20px;
-  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 5px;
 }
 
 .section h3 {
@@ -253,7 +290,7 @@ body {
   padding-bottom: 1px;
   font-weight: bold;
   text-transform: uppercase;
-  border-bottom: 1px solid #EEEEEE;
+  border-bottom: 1px solid #C8C8C8;
 }
 
 .room {
@@ -353,13 +390,12 @@ body {
 .footer-container {
   background-color: #F4F4F4;
   width: 100%;
-  border-top: solid 2px #DBDBDB;
   min-width: 860px;
   z-index: 5;
 }
 
 .footer {
-  padding: 7px 70px 5px 112px;
+  padding: 7px 70px 5px 70px;
 }
 
 .footer h3 {
@@ -424,6 +460,12 @@ body {
   background-position: -215px 0;
 }
 
+.nokia-logo {
+  background-image: url('/img/logos.png');
+  width: 140px;
+  background-position: -370px 14px;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-device-width: 860px) {
   body {
@@ -450,10 +492,6 @@ body {
 
   .header .nav li {
     display: block;
-  }
-
-  .logo {
-    float: none;
   }
 
   .content-container {

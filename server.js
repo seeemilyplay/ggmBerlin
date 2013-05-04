@@ -16,4 +16,5 @@ var app = connect()
   })
 
 var port = process.env.PORT || 8888;
+console.log("Starting on port " + port);
 http.createServer(app).listen(port);
