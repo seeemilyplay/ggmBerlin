@@ -87,7 +87,7 @@ a:focus{
 body {
   background-image: url('/img/background.png');
   font-family: 'Cabin Condensed', Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .header-container {
@@ -176,6 +176,7 @@ body {
 .headline h1 {
   font-size: 2em;
   line-height: 1.2;
+  font-weight: 600;
 }
 
 .headline header p {
@@ -189,7 +190,7 @@ body {
 }
 
 .headline .highlight {
-  color: #22C2F8;
+  color: #2DC4F3;
 }
 
 #home .slides {
@@ -271,6 +272,7 @@ body {
   font-size: 1.5em;
   margin-bottom: 5px;
   width: 75%;
+  font-weight: 500;
 }
 
 .schedule .time,
@@ -288,13 +290,13 @@ body {
 .time {
   padding-top: 20px;
   padding-bottom: 1px;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
   border-bottom: 1px solid #C8C8C8;
 }
 
 .room {
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -401,7 +403,6 @@ body {
 .footer h3 {
   float: left;
   font-size: 1em;
-  font-weight: normal;
   text-transform: uppercase;
 }
 
@@ -448,6 +449,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.additional.sponsors a {
+  margin-top: 20px;
+}
+
 .soundcloud-logo {
   background-image: url('/img/logos.png');
   width: 78px;
@@ -464,6 +469,12 @@ body {
   background-image: url('/img/logos.png');
   width: 140px;
   background-position: -370px 14px;
+}
+
+.big-logo {
+  background-image: url('/img/logos.png');
+  width: 172px;
+  background-position: -495px 0;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -565,6 +576,10 @@ body {
     text-align: left;
     padding-left: 0;
     width: 75%;
+  }
+
+  .additional.sponsors {
+    display: none;
   }
 
   .footer-container {
