@@ -368,11 +368,26 @@ body {
 
 .portrait {
   background-image: url('/img/portrait-surround.png');
-  min-width: 121px;
-  min-height: 121px;
+  min-width: 240px;
+  min-height: 240px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.portrait.alesha {
+  background-image: url('/img/people.png');
+  background-position: 0 0;
+}
+
+.portrait.angela {
+  background-image: url('/img/people.png');
+  background-position: -240px 0;
+}
+
+.portrait.emily {
+  background-image: url('/img/people.png');
+  background-position: -480px 0;
 }
 
 .person h3 {
@@ -384,7 +399,7 @@ body {
   text-align: center;
   overflow-y: auto;
   width: auto;
-  height: 100px;
+  height: 120px;
   font-size: 1em;
   padding: 5px;
 }
