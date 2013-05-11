@@ -368,8 +368,8 @@ body {
 
 .portrait {
   background-image: url('/img/portrait-surround.png');
-  min-width: 240px;
-  min-height: 240px;
+  width: 240px;
+  height: 240px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
