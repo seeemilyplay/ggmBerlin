@@ -495,7 +495,7 @@ body {
   }
 
   .header {
-    padding: 25px 10px 10px 15px;
+    padding: 0 10px 10px 15px;
   }
 
   .header .nav {
@@ -508,7 +508,7 @@ body {
 
   .buttons {
     position: static;
-    padding: 10px;
+    padding: 10px 0 10px 10px;
   }
 
   .content-container {
