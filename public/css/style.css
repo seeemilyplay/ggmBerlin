@@ -370,7 +370,6 @@ body {
   background-image: url('/img/portrait-surround.png');
   width: 240px;
   height: 240px;
-  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
