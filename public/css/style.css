@@ -506,9 +506,17 @@ body {
     display: block;
   }
 
+  .headline h1 {
+    width: 80%;
+  }
+
   .buttons {
     position: static;
     padding: 10px 0 10px 10px;
+  }
+
+  #about.section p {
+    width: 80%;
   }
 
   .content-container {
