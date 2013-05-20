@@ -389,6 +389,11 @@ body {
   background-position: -480px 0;
 }
 
+.portrait.jess {
+  background-image: url('/img/people.png');
+  background-position: -720px 0;
+}
+
 .person h3 {
   padding-top: 10px;
   text-align: center;
