@@ -65,7 +65,7 @@ $(window).bind('scroll', function() {
     return links.removeClass('selected');
   }
   pos.each(function(i,p){
-    if (window.scrollY >= p) {
+    if ((window.scrollY + 67)>= p) {
       selectLink.apply(links[i]);
     }
   });
