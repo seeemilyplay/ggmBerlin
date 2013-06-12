@@ -39,6 +39,39 @@ var setupScrolling = function() {
 };
 $(window).load(setupScrolling);
 
+var links = $('a[href^="#"]');
+
+var selectLink = function() {
+  links.removeClass('selected');
+  $(this).addClass('selected');
+};
+
+links.click(selectLink);
+
+var pos = links.map(function(index, link) {
+  return $(link.hash).position().top;
+});
+
+$(window).bind('scroll', function() {
+  if (lock) {
+    if (window.scrollY === lock) {
+      lock = undefined;
+    }
+    return;
+  }
+
+  if (window.scrollY < pos[0]) {
+    return links.removeClass('selected');
+  }
+  pos.each(function(i,p){
+    if (window.scrollY >= p) {
+      selectLink.apply(links[i]);
+    }
+  });
+}).bind('notify.serialScroll', function(ev, elm){
+    lock = $(elm).position().top;
+});
+
 $('.speaker').click(function() {
   var bio = $(this).siblings('.bio.expanded');
   if (bio.length>0) {

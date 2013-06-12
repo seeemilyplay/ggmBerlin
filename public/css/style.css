@@ -119,6 +119,7 @@ body {
   font-size: 1.4em;
 }
 
+.header .nav a.selected,
 .header .nav a:hover {
   color: #FFF;
 }
