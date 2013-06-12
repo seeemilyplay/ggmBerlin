@@ -503,7 +503,7 @@ body {
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (max-device-width: 860px) {
+ @media only screen and (max-device-width: 860px) {
   body {
     background-image: none;
   }
@@ -644,4 +644,9 @@ body {
   .footer .nav {
     float: none;
   }
-}
+
+  .social a {
+    background-image: url('/img/hres/social.png');
+    background-size: 108px 36px;
+  }
+ }
