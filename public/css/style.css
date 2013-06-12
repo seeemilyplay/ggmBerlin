@@ -229,6 +229,10 @@ body {
   background-image: url('/img/slide-cutout.png');
 }
 
+.button-container {
+ margin: 5px 0;
+}
+
 .button {
   display: inline-block;
   background-color: #04445A;
@@ -238,7 +242,8 @@ body {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  margin: 10px 0;
+  margin: 5px 0;
+  min-width: 163px;
 }
 
 .button:hover {
