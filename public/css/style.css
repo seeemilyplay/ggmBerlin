@@ -478,26 +478,26 @@ body {
   margin-top: 20px;
 }
 
-.soundcloud-logo {
+.logo {
   background-image: url('/img/logos.png');
+}
+
+.soundcloud-logo {
   width: 78px;
   background-position: -137px 0;
 }
 
 .betahaus-logo {
-  background-image: url('/img/logos.png');
   width: 155px;
   background-position: -215px 0;
 }
 
 .nokia-logo {
-  background-image: url('/img/logos.png');
   width: 140px;
   background-position: -369px 14px;
 }
 
 .big-logo {
-  background-image: url('/img/logos.png');
   width: 172px;
   background-position: -495px 0;
 }
@@ -649,4 +649,14 @@ body {
     background-image: url('/img/hres/social.png');
     background-size: 108px 36px;
   }
- }
+
+  .buttons a {
+    background-image: url('/img/hres/button-logos.png');
+    background-size: 264px 131px;
+  }
+
+  .logo {
+    background-image: url('/img/hres/logos.png');
+    background-size: 668px 50px;
+  }
+}
