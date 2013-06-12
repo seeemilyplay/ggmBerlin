@@ -39,7 +39,8 @@ var setupScrolling = function() {
 };
 $(window).load(setupScrolling);
 
-var links = $('a[href^="#"]');
+var links = $('a[href^="#"]'),
+    lock;
 
 var selectLink = function() {
   links.removeClass('selected');
