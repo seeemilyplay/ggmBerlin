@@ -231,7 +231,16 @@ body {
 }
 
 .button-container {
- margin: 5px 0;
+  margin: 5px 0;
+}
+
+.small-info {
+  margin: 20px 0 5px 0;
+}
+
+.small-info a {
+  color: #04445A;
+  text-decoration: underline;
 }
 
 .button {
@@ -333,14 +342,18 @@ body {
 
 .speaker,
 .session .title {
+  padding-bottom: 5px;
+  margin-top: 10px;
+}
+
+.speaker.expandable,
+.title.expandable {
   background-image: url('/img/plus-minus-icons.png');
   background-repeat: no-repeat;
   background-position: -24px 4px;
   padding-left: 30px;
   cursor: hand;
   cursor: pointer;
-  padding-bottom: 5px;
-  margin-top: 10px;
 }
 
 .speaker.expanded,

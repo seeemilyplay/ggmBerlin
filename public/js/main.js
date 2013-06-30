@@ -73,7 +73,7 @@ $(window).bind('scroll', function() {
     lock = $(elm).position().top;
 });
 
-$('.speaker').click(function() {
+$('.speaker.expandable').click(function() {
   var bio = $(this).siblings('.bio.expanded');
   if (bio.length>0) {
     $(this).removeClass('expanded');
@@ -85,7 +85,7 @@ $('.speaker').click(function() {
   }
 });
 
-$('.session .title').click(function() {
+$('.title.expandable').click(function() {
   var desc = $(this).siblings('.description.expanded');
   if (desc.length>0) {
     $(this).removeClass('expanded');
