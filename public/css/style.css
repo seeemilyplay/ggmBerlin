@@ -386,6 +386,11 @@ body {
   display: inline-block;
 }
 
+.break a.melanie {
+  padding: 0;
+  text-decoration: underline;
+}
+
 .person {
   display: inline-block;
   width: 240px;
