@@ -378,8 +378,12 @@ body {
   display: block;
 }
 
-.session .links {
-  padding-left: 20px;
+.schedule .links a {
+  padding-left: 0;
+}
+
+.session .links.indented {
+  padding-left: 30px;
 }
 
 .session .links a {
@@ -608,10 +612,6 @@ body {
   .break {
     padding-left: 0;
     padding-right: 0;
-  }
-
-  .session .links {
-    padding-left: 30px;
   }
 
   .person {
