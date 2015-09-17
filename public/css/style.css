@@ -87,7 +87,7 @@ a:focus{
 body {
   background-image: url('/img/background.png');
   font-family: 'Cabin Condensed', Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .header-container {
@@ -95,37 +95,54 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #22C2F8;
-  border-bottom: solid 2px #1690B9;
+  background-color: #04445A;
+  border-bottom: solid 2px #04445A;
   z-index: 10;
   min-width: 860px;
   min-height: 65px;
 }
 
 .header {
-  padding: 20px 110px 3px 110px;
+  padding: 20px 70px 3px 70px;
 }
 
 .header .nav {
   display: block;
   float: left;
-  margin: 20px 0 0 0;
+  margin: 2px 0 0 0;
 }
 
 .header .nav a {
-  color: #FFF;
+  color: #A4B2B9;
   text-transform: uppercase;
   margin-right: 25px;
   font-size: 1.4em;
 }
 
-.logo {
-  display: block;
-  float: right;
-  background-image: url('/img/logos.png');
-  height: 20px;
-  width: 137px;
-  margin-top: 19px;
+.header .nav a.selected,
+.header .nav a:hover {
+  color: #FFF;
+}
+
+.buttons {
+  position: absolute;
+  top: 10px;
+  right: 90px;
+}
+
+.buttons a {
+  background-image: url('/img/button-logos.png');
+  height: 131px;
+  width: 132px;
+  display: inline-block;
+}
+
+.bg-button-logo {
+  background-position: 0 0;
+}
+
+.ggm-button-logo {
+  background-position: 132px 0;
 }
 
 .content-container {
@@ -140,8 +157,8 @@ body {
 }
 
 .home {
-  border-bottom: solid 2px #EEEEEE;
-  min-height: 237px;
+  border-bottom: solid 1px #C8C8C8;
+  min-height: 380px;
 }
 
 .headline {
@@ -160,6 +177,7 @@ body {
 .headline h1 {
   font-size: 2em;
   line-height: 1.2;
+  font-weight: 600;
 }
 
 .headline header p {
@@ -172,22 +190,57 @@ body {
   max-width: 70%;
 }
 
+.headline .highlight {
+  color: #2DC4F3;
+}
+
 #home .slides {
   position: absolute;
   top: 0;
   right: 0;
   width: 60%;
-  max-width: 640px;
-  height: 237px;
+  max-width: 629px;
+  height: 380px;
   background-image: url('/img/slides.png');
-  background-position: right;
+  background-position: 0 0;
   background-repeat: no-repeat;
+  transition: background-position 500ms ease;
+  -webkit-transition: background-position 1000ms ease;
+  -moz-transition: background-position 1000ms ease;
+  -o-transition: background-position 1000ms ease;
+}
+
+#home .slides.number-1 {
+  background-position: 0 0;
+}
+
+#home .slides.number-2 {
+  background-position: -736px 0;
+}
+
+#home .slides.number-3 {
+  background-position: right;
 }
 
 .cutout {
-  height: 237px;
-  width: 237px;
+  position: relative;
+  top: -1px;
+  height: 380px;
+  width: 227px;
   background-image: url('/img/slide-cutout.png');
+}
+
+.button-container {
+  margin: 5px 0;
+}
+
+.small-info {
+  margin: 20px 0 5px 0;
+}
+
+.small-info a {
+  color: #04445A;
+  text-decoration: underline;
 }
 
 .button {
@@ -199,7 +252,8 @@ body {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin: 5px 0;
+  min-width: 163px;
 }
 
 .button:hover {
@@ -209,7 +263,7 @@ body {
 
 .section {
   padding: 20px 0;
-  border-bottom: solid 2px #EEEEEE;
+  border-bottom: solid 1px #C8C8C8;
 }
 
 .section .anchor {
@@ -219,9 +273,8 @@ body {
 
 .section h2 {
   text-transform: uppercase;
-  font-size: 1.5em;
-  margin-bottom: 20px;
-  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 5px;
 }
 
 .section h3 {
@@ -230,10 +283,19 @@ body {
   margin-bottom: 10px;
 }
 
+.section.keynote h3 {
+  font-weight: bold;
+}
+
+.section.keynote p {
+  font-size: 1.2em;
+}
+
 .section p {
   font-size: 1.5em;
   margin-bottom: 5px;
   width: 75%;
+  font-weight: 500;
 }
 
 .schedule .time,
@@ -251,13 +313,13 @@ body {
 .time {
   padding-top: 20px;
   padding-bottom: 1px;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
-  border-bottom: 1px solid #EEEEEE;
+  border-bottom: 1px solid #C8C8C8;
 }
 
 .room {
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -280,14 +342,18 @@ body {
 
 .speaker,
 .session .title {
+  padding-bottom: 5px;
+  margin-top: 10px;
+}
+
+.speaker.expandable,
+.title.expandable {
   background-image: url('/img/plus-minus-icons.png');
   background-repeat: no-repeat;
   background-position: -24px 4px;
   padding-left: 30px;
   cursor: hand;
   cursor: pointer;
-  padding-bottom: 5px;
-  margin-top: 10px;
 }
 
 .speaker.expanded,
@@ -312,12 +378,21 @@ body {
   display: block;
 }
 
-.session .links {
-  padding-left: 20px;
+.schedule .links a {
+  padding-left: 0;
+}
+
+.session .links.indented {
+  padding-left: 30px;
 }
 
 .session .links a {
   display: inline-block;
+}
+
+.break a.melanie {
+  padding: 0;
+  text-decoration: underline;
 }
 
 .person {
@@ -329,11 +404,30 @@ body {
 
 .portrait {
   background-image: url('/img/portrait-surround.png');
-  min-width: 121px;
-  min-height: 121px;
-  width: 100%;
+  width: 240px;
+  height: 240px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.portrait.alesha {
+  background-image: url('/img/people.png');
+  background-position: 0 0;
+}
+
+.portrait.angela {
+  background-image: url('/img/people.png');
+  background-position: -240px 0;
+}
+
+.portrait.emily {
+  background-image: url('/img/people.png');
+  background-position: -480px 0;
+}
+
+.portrait.jess {
+  background-image: url('/img/people.png');
+  background-position: -720px 0;
 }
 
 .person h3 {
@@ -345,7 +439,7 @@ body {
   text-align: center;
   overflow-y: auto;
   width: auto;
-  height: 100px;
+  height: 120px;
   font-size: 1em;
   padding: 5px;
 }
@@ -353,19 +447,17 @@ body {
 .footer-container {
   background-color: #F4F4F4;
   width: 100%;
-  border-top: solid 2px #DBDBDB;
   min-width: 860px;
   z-index: 5;
 }
 
 .footer {
-  padding: 7px 70px 5px 112px;
+  padding: 7px 70px 5px 70px;
 }
 
 .footer h3 {
   float: left;
   font-size: 1em;
-  font-weight: normal;
   text-transform: uppercase;
 }
 
@@ -412,27 +504,44 @@ body {
   background-repeat: no-repeat;
 }
 
-.soundcloud-logo {
+.additional.sponsors a {
+  margin-top: 20px;
+}
+
+.logo {
   background-image: url('/img/logos.png');
+}
+
+.soundcloud-logo {
   width: 78px;
   background-position: -137px 0;
 }
 
 .betahaus-logo {
-  background-image: url('/img/logos.png');
   width: 155px;
   background-position: -215px 0;
 }
 
+.nokia-logo {
+  width: 140px;
+  background-position: -369px 14px;
+}
+
+.big-logo {
+  width: 172px;
+  background-position: -495px 0;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (max-device-width: 860px) {
+ @media only screen and (max-device-width: 860px) {
   body {
     background-image: none;
   }
 
-  .nav a {
+  .header .nav a {
     padding: 5px 0 5px 0;
     margin-left: 0;
+    color: #FFF;
   }
 
   .header-container {
@@ -441,7 +550,7 @@ body {
   }
 
   .header {
-    padding: 25px 10px 2px 15px;
+    padding: 0 10px 10px 15px;
   }
 
   .header .nav {
@@ -452,8 +561,17 @@ body {
     display: block;
   }
 
-  .logo {
-    float: none;
+  .headline h1 {
+    width: 80%;
+  }
+
+  .buttons {
+    position: static;
+    padding: 10px 0 10px 10px;
+  }
+
+  #about.section p {
+    width: 80%;
   }
 
   .content-container {
@@ -461,6 +579,15 @@ body {
     padding-left: 15px;
     padding-right: 10px;
     min-width: 0;
+  }
+
+  #home {
+    min-height: 0;
+  }
+
+  #home .headline {
+    min-height: 0;
+    margin-bottom: 30px;
   }
 
   #home .slides {
@@ -487,10 +614,6 @@ body {
     padding-right: 0;
   }
 
-  .session .links {
-    padding-left: 30px;
-  }
-
   .person {
     display: block;
     width: auto;
@@ -512,6 +635,10 @@ body {
     text-align: left;
     padding-left: 0;
     width: 75%;
+  }
+
+  .additional.sponsors {
+    display: none;
   }
 
   .footer-container {
@@ -542,5 +669,20 @@ body {
 
   .footer .nav {
     float: none;
+  }
+
+  .social a {
+    background-image: url('/img/hres/social.png');
+    background-size: 108px 36px;
+  }
+
+  .buttons a {
+    background-image: url('/img/hres/button-logos.png');
+    background-size: 264px 131px;
+  }
+
+  .logo {
+    background-image: url('/img/hres/logos.png');
+    background-size: 668px 50px;
   }
 }
