@@ -2,7 +2,7 @@
   "name": "ggmBerlin",
   "version": "0.0.1",
   "dependencies": {
-    "express": "2.5.1",
+    "express": "~2.5.1",
     "connect": "2.3.x"
   },
   "engines": {
