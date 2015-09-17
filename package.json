@@ -2,10 +2,10 @@
   "name": "ggmBerlin",
   "version": "0.0.1",
   "dependencies": {
-    "express": "~2.5.1",
-    "connect": "2.3.x"
+    "express": "4.13.x",
+    "connect": "3.4.x"
   },
   "engines": {
-    "node": "0.6.x"
+    "node": "0.12.x"
   }
 }
